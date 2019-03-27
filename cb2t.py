@@ -64,6 +64,8 @@ for linea in f:
             else:
                 fin=""
     if len(linea)>0:
+        linea=linea.replace("\{", "{")
+        linea=linea.replace("}\\", "}")
         g.write(tabSimbol*numTabs+linea+blockSimbol+returnSimbol)
     numTabs=numTabs+nextTabs
     nextTabs=0

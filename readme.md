@@ -8,6 +8,10 @@ El script convierte las llaves tanto al principio como al final de cada línea, 
 
 Los retornos de carro utilizados en el archivo origen son respetados en el archivo destino, tanto para Windows, Mac o Linux.
 
+Para usar llaves en diccionarios, será necesario usar el caracter de escape, ejemplo "\{" para iniciarlo y "}\" para cerrarlo.
+
+personas=\{"Ernesto":5,"Juan":2,"Pedro":3}\
+
 ## Funcionamiento
 
 $ py cb2t.py --help
@@ -38,8 +42,10 @@ Ejecutar el script al terminar. Default: false
 
 $ py cb2t.py -i ejemplo.py -o ejemplo2.py -t tabs -x true
 
+Se incluye el script de ejemplo con llaves.
+
 ## Anotaciones y Errores detectados
 
 * Solo son interpretadas las llaves que están o al principio o al final de cada línea, no se procesan llaves intermedias.
-* Si una línea comienza con "{", el signo de ":" no se aplica a la línea anterior, por lo que se recomienda poner las llaves de abrir al final de la línea donde comenzará el bloque, ejemplo def funcion(parametro){
-* Aún no implementada la omisión en las llaves usadas en los diccionarios
+* Si una línea comienza con "{", el signo de ":" no se aplica a la línea anterior, por lo que se recomienda poner las llaves de abrir al final de la línea donde comenzará el bloque, ejemplo: "def funcion(parametro){"
+* En los diccionarios hay que usar los signos de escape en las llaves, a fin de que se copien al script de destino, mirar en el apartado descripción la manera.

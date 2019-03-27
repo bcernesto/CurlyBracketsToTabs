@@ -13,4 +13,8 @@ print("Hola "+nombre)
 print("Hola mundo")
 }
 }
-saludo()
+# Creando un diccionario con caracteres de escape en las llaves
+personas=\{"Ernesto":5,"Juan":2,"Pedro":3}\
+for persona in personas{
+    saludo(persona, personas[persona])
+}
