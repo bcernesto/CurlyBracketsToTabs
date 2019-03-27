@@ -16,24 +16,23 @@ usage: cb2t.py [-h] -i INPUT [-o OUTPUT] [-t {tabs,spaces}] [-x {true,false}]
 
 Conversor de llaves a tabulaciones
 
+required arguments:
+
+-i INPUT, --input INPUT:
+Nombre de archivo a procesar. Si contiene espacios, encerrar entre comillas dobles
+
 optional arguments:
 
 -h, --help            show this help message and exit
 
--o OUTPUT, --output OUTPUT
+-o OUTPUT, --output OUTPUT:
 Nombre de archivo destino. Si contiene espacios, encerrar entre comillas dobles. Default: "output.py"
 
--t {tabs,spaces}, --tab {tabs,spaces}
-Caracter de tabulación. Valores aceptados: "tabs" para \t, o "spaces" para cuatro espacios. Default: "tab"
+-t {tabs,spaces}, --tab {tabs,spaces}:
+Caracter de tabulación. Valores aceptados: "tabs" para \t, o "spaces" para cuatro espacios. Default: "tabs"
 
--x {true,false}, --execute {true,false}
+-x {true,false}, --execute {true,false}:
 Ejecutar el script al terminar. Default: false
-
-required arguments:
-
--i INPUT, --input INPUT
-Nombre de archivo a procesar. Si contiene espacios, encerrar entre comillas dobles
-
 
 ## Ejemplo
 

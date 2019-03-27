@@ -7,7 +7,7 @@ parser = argparse.ArgumentParser(description="Conversor de llaves a tabulaciones
 requiredNamed = parser.add_argument_group('required arguments')
 requiredNamed.add_argument("-i", "--input", help="Nombre de archivo a procesar. Si contiene espacios, encerrar entre comillas dobles", required=True)
 parser.add_argument("-o", "--output", help="Nombre de archivo destino. Si contiene espacios, encerrar entre comillas dobles. Default: \"output.py\"", default="output.py")
-parser.add_argument("-t", "--tab", help="Caracter de tabulación. Valores aceptados: \"tab\" para \\t, o \"spaces\" para cuatro espacios. Default: \"tab\"", choices=["tabs","spaces"], default="tabs")
+parser.add_argument("-t", "--tab", help="Caracter de tabulación. Valores aceptados: \"tabs\" para \\t, o \"spaces\" para cuatro espacios. Default: \"tabs\"", choices=["tabs","spaces"], default="tabs")
 parser.add_argument("-x", "--execute", help="Ejecutar el script al terminar. Default: false", choices=["true","false"], default="false")
 args = parser.parse_args()
 
