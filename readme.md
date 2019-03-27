@@ -8,9 +8,11 @@ El script convierte las llaves tanto al principio como al final de cada línea, 
 
 Los retornos de carro utilizados en el archivo origen son respetados en el archivo destino, tanto para Windows, Mac o Linux.
 
-Para usar llaves en diccionarios, será necesario usar el caracter de escape, ejemplo "\{" para iniciarlo y "}\" para cerrarlo.
+Para usar llaves en diccionarios, será necesario usar el caracter de escape, ejemplo "\\{" para iniciarlo y "}\\" para cerrarlo.
 
-personas=\{"Ernesto":5,"Juan":2,"Pedro":3}\
+personas=\\{"Ernesto":5,"Juan":2,"Pedro":3}\\
+
+Para mejor comprensión, ver archivo ejemplo.py
 
 ## Funcionamiento
 
